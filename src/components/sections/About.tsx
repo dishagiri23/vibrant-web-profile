@@ -12,20 +12,14 @@ export function About() {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
-            <p className="text-lg">
-              I'm a Computer Science student passionate about full-stack web development, focused on creating responsive and user-friendly websites.
+            <p className="text-lg leading-relaxed">
+              I'm a BCA student passionate about web development, focused on creating responsive and user-friendly websites that solve real problems.
             </p>
-            <p className="text-lg">
-              I build modern web applications using HTML, CSS, JavaScript, and React, constantly exploring new technologies to enhance my development skills.
+            <p className="text-lg leading-relaxed">
+              My technical journey includes building applications with modern technologies like HTML, CSS, JavaScript, and React, constantly exploring new tools to enhance my development skills.
             </p>
-            <p className="text-lg">
-              My strengths include problem-solving, quick adaptation to new technologies, and a keen eye for design details that improve user experience.
-            </p>
-            <p className="text-lg">
-              I focus on writing clean, readable code and am committed to continuous learning and improvement. I believe good code should be both functional and maintainable.
-            </p>
-            <p className="text-lg">
-              My goal is to create projects that are not only technically sound but also genuinely useful and accessible to users. I'm excited about contributing to solutions that make a positive impact.
+            <p className="text-lg leading-relaxed">
+              I excel at quickly adapting to new technologies and have a keen eye for design details that improve user experience. My goal is to create projects that are both technically sound and genuinely accessible to users.
             </p>
           </div>
           
@@ -49,11 +43,15 @@ export function About() {
                   </li>
                   <li className="flex items-start">
                     <span className="font-semibold w-24">Study:</span>
-                    <span>Computer Science</span>
+                    <span>BCA (Bachelor of Computer Applications)</span>
                   </li>
                   <li className="flex items-start">
                     <span className="font-semibold w-24">Interests:</span>
-                    <span>Web Development, Problem Solving, Learning New Technologies</span>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">Web Development</span>
+                      <span className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">Problem Solving</span>
+                      <span className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">New Technologies</span>
+                    </div>
                   </li>
                 </ul>
               </div>

@@ -57,9 +57,9 @@ export function Projects() {
           subtitle="Check out some of my recent work"
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden card-hover">
+            <Card key={index} className="overflow-hidden card-hover max-w-sm mx-auto">
               <div className="aspect-video overflow-hidden bg-muted">
                 <img 
                   src={project.image} 
@@ -67,32 +67,32 @@ export function Projects() {
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-300" 
                 />
               </div>
-              <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
+              <CardHeader className="p-4">
+                <CardTitle className="text-xl">{project.title}</CardTitle>
                 <CardDescription>{project.description}</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="p-4 pt-0">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.techStack.map((tech, techIndex) => (
                     <span 
                       key={techIndex} 
-                      className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                      className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="flex justify-between">
-                <Button variant="outline" asChild>
+              <CardFooter className="flex justify-between p-4">
+                <Button variant="outline" size="sm" asChild>
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Github size={18} className="mr-2" />
+                    <Github size={16} className="mr-2" />
                     Repo
                   </a>
                 </Button>
-                <Button asChild>
+                <Button size="sm" asChild>
                   <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink size={18} className="mr-2" />
+                    <ExternalLink size={16} className="mr-2" />
                     Live Demo
                   </a>
                 </Button>

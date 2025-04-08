@@ -5,38 +5,38 @@ import { Code, Server, Database, Wrench } from "lucide-react";
 
 type Skill = {
   name: string;
-  icon?: JSX.Element;
+  icon: string;
 };
 
 const frontendSkills: Skill[] = [
-  { name: "HTML5" },
-  { name: "CSS3" },
-  { name: "JavaScript" },
-  { name: "React.js" },
-  { name: "Tailwind CSS" },
-  { name: "Bootstrap" },
-  { name: "Responsive Design" },
+  { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "React.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+  { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+  { name: "Responsive Design", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
 ];
 
 const backendSkills: Skill[] = [
-  { name: "Node.js" },
-  { name: "Express.js" },
-  { name: "RESTful APIs" },
-  { name: "Authentication" },
+  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { name: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+  { name: "RESTful APIs", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+  { name: "Authentication", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" },
 ];
 
 const databaseSkills: Skill[] = [
-  { name: "MongoDB" },
-  { name: "MySQL" },
-  { name: "Firebase" },
+  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
 ];
 
 const toolsSkills: Skill[] = [
-  { name: "Git & GitHub" },
-  { name: "VS Code" },
-  { name: "npm" },
-  { name: "Postman" },
-  { name: "Figma" },
+  { name: "Git & GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+  { name: "npm", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" },
+  { name: "Postman", icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
+  { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
 ];
 
 export function Skills() {
@@ -57,14 +57,17 @@ export function Skills() {
               <CardTitle>Frontend</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-4 justify-center">
                 {frontendSkills.map((skill, index) => (
-                  <span 
-                    key={index}
-                    className="px-3 py-1 bg-secondary rounded-lg text-secondary-foreground text-sm"
-                  >
-                    {skill.name}
-                  </span>
+                  <div key={index} className="flex flex-col items-center gap-2">
+                    <img 
+                      src={skill.icon} 
+                      alt={skill.name}
+                      className="w-10 h-10"
+                      title={skill.name}
+                    />
+                    <span className="text-xs text-center">{skill.name}</span>
+                  </div>
                 ))}
               </div>
             </CardContent>
@@ -78,14 +81,17 @@ export function Skills() {
               <CardTitle>Backend</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-4 justify-center">
                 {backendSkills.map((skill, index) => (
-                  <span 
-                    key={index}
-                    className="px-3 py-1 bg-secondary rounded-lg text-secondary-foreground text-sm"
-                  >
-                    {skill.name}
-                  </span>
+                  <div key={index} className="flex flex-col items-center gap-2">
+                    <img 
+                      src={skill.icon} 
+                      alt={skill.name}
+                      className="w-10 h-10"
+                      title={skill.name}
+                    />
+                    <span className="text-xs text-center">{skill.name}</span>
+                  </div>
                 ))}
               </div>
             </CardContent>
@@ -99,14 +105,17 @@ export function Skills() {
               <CardTitle>Database</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-4 justify-center">
                 {databaseSkills.map((skill, index) => (
-                  <span 
-                    key={index}
-                    className="px-3 py-1 bg-secondary rounded-lg text-secondary-foreground text-sm"
-                  >
-                    {skill.name}
-                  </span>
+                  <div key={index} className="flex flex-col items-center gap-2">
+                    <img 
+                      src={skill.icon} 
+                      alt={skill.name}
+                      className="w-10 h-10"
+                      title={skill.name}
+                    />
+                    <span className="text-xs text-center">{skill.name}</span>
+                  </div>
                 ))}
               </div>
             </CardContent>
@@ -120,14 +129,17 @@ export function Skills() {
               <CardTitle>Tools</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-4 justify-center">
                 {toolsSkills.map((skill, index) => (
-                  <span 
-                    key={index}
-                    className="px-3 py-1 bg-secondary rounded-lg text-secondary-foreground text-sm"
-                  >
-                    {skill.name}
-                  </span>
+                  <div key={index} className="flex flex-col items-center gap-2">
+                    <img 
+                      src={skill.icon} 
+                      alt={skill.name}
+                      className="w-10 h-10"
+                      title={skill.name}
+                    />
+                    <span className="text-xs text-center">{skill.name}</span>
+                  </div>
                 ))}
               </div>
             </CardContent>
