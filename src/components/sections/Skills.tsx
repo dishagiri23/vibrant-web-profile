@@ -13,7 +13,7 @@ const frontendSkills: Skill[] = [
   { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
   { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
   { name: "React.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+  { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
   { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
   { name: "Responsive Design", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
 ];
@@ -87,7 +87,7 @@ export function Skills() {
                     <img 
                       src={skill.icon} 
                       alt={skill.name}
-                      className="w-10 h-10"
+                      className={`w-10 h-10 ${skill.name === 'Express.js' ? 'dark:invert dark:brightness-90 brightness-75' : ''}`}
                       title={skill.name}
                     />
                     <span className="text-xs text-center">{skill.name}</span>

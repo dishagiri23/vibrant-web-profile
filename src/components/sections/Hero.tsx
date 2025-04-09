@@ -59,12 +59,12 @@ export function Hero() {
             <div className="relative w-64 h-64 md:w-80 md:h-80">
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary to-purple-300 opacity-20 blur-3xl"></div>
               <div className="relative bg-card border-2 border-primary/20 rounded-full w-full h-full flex items-center justify-center overflow-hidden">
-                <div className="animated-icon">
-                  <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-primary">
-                    <path d="M3 19L12 12L21 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="animate-bounce" />
-                    <path d="M5 7L12 12L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="animate-bounce" style={{ animationDelay: "0.2s" }} />
-                    <path d="M8 4L12 12L16 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="animate-bounce" style={{ animationDelay: "0.4s" }} />
-                  </svg>
+                <div className="animated-icon w-full h-full flex items-center justify-center">
+                  <img 
+                    src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW1vdWdzbGV0OHM2eXgwcmw1bHF0MXN2cWZweXlnbTVpODNjc2VkciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/765ccrAiB0g9z6EApL/giphy.gif" 
+                    alt="Developer Animation" 
+                    className="w-2/3 h-2/3 object-contain"
+                  />
                 </div>
               </div>
             </div>
