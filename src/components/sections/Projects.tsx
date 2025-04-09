@@ -20,7 +20,7 @@ const projects: Project[] = [
     techStack: ["React", "Tailwind CSS", "Node.js"],
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     liveUrl: "#",
-    githubUrl: "https://github.com/dishagiri23",
+    githubUrl: "https://github.com/dishagiri23/tech-tales-by-disha",
   },
   {
     title: "Weather App",
