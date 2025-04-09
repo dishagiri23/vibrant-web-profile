@@ -57,7 +57,7 @@ export function Hero() {
           </div>
           <div className="order-1 md:order-2 flex justify-center animate-fade-in">
             <div className="relative w-64 h-64 md:w-80 md:h-80">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary to-primary/30 opacity-20 blur-3xl"></div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#a78bfa] to-[#c4b5fd] opacity-30 blur-3xl"></div>
               <div className="relative bg-card border-2 border-primary/20 rounded-full w-full h-full flex items-center justify-center overflow-hidden">
                 <div className="w-full h-full flex items-center justify-center">
                   <img 
