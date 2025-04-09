@@ -59,11 +59,11 @@ export function Hero() {
             <div className="relative w-64 h-64 md:w-80 md:h-80">
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary to-purple-300 opacity-20 blur-3xl"></div>
               <div className="relative bg-card border-2 border-primary/20 rounded-full w-full h-full flex items-center justify-center overflow-hidden">
-                <div className="animated-icon w-full h-full flex items-center justify-center">
+                <div className="w-full h-full flex items-center justify-center">
                   <img 
                     src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW1vdWdzbGV0OHM2eXgwcmw1bHF0MXN2cWZweXlnbTVpODNjc2VkciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/765ccrAiB0g9z6EApL/giphy.gif" 
                     alt="Developer Animation" 
-                    className="w-2/3 h-2/3 object-contain"
+                    className="w-4/5 h-4/5 object-cover rounded-full"
                   />
                 </div>
               </div>
