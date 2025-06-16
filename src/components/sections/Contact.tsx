@@ -49,8 +49,8 @@ export function Contact() {
               <h4 className="text-lg font-medium">Contact Information</h4>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <a href="mailto:dishagiri09170@gmail.com" className="hover:text-primary transition-colors">
-                  dishagiri09170@gmail.com
+                <a href="mailto:disha.career@outlook.com" className="hover:text-primary transition-colors">
+                  disha.career@outlook.com
                 </a>
               </div>
             </div>
