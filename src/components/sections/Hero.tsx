@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Twitter, Mail, Download } from "lucide-react";
 import { toast } from "sonner";
@@ -10,8 +9,8 @@ export function Hero() {
   };
 
   const handleDownloadResume = () => {
-    // Link to the actual resume PDF
-    const resumeLink = "/disha_giri_resume.pdf";
+    // Updated link to the new resume PDF
+    const resumeLink = "/Disha_Giri_Resume.pdf";
     const link = document.createElement('a');
     link.href = resumeLink;
     link.setAttribute('download', 'Disha_Giri_Resume.pdf');
