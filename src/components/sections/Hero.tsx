@@ -5,7 +5,7 @@ import { toast } from "sonner";
 
 export function Hero() {
   const handleHireMe = () => {
-    window.location.href = "mailto:dishagiri09170@gmail.com?subject=Job Opportunity";
+    window.location.href = "mailto:disha.career@outlook.com?subject=Job Opportunity";
     toast.success("Opening email client");
   };
 
@@ -50,7 +50,7 @@ export function Hero() {
               <a href="https://www.linkedin.com/in/disha-giri-414a72314/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="mailto:dishagiri09170@gmail.com" className="text-foreground hover:text-primary transition-colors">
+              <a href="mailto:disha.career@outlook.com" className="text-foreground hover:text-primary transition-colors">
                 <Mail size={24} />
               </a>
             </div>
