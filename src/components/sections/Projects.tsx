@@ -35,8 +35,8 @@ const projects: Project[] = [
     description: "Fully functional e-commerce platform with product listings",
     techStack: ["React", "Express", "MongoDB", "Node.js"],
     image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-    liveUrl: "#",
-    githubUrl: "https://github.com/dishagiri23",
+    liveUrl: "https://personalshopease.netlify.app/",
+    githubUrl: "https://github.com/dishagiri23/Personal-Ecommerce-Website",
   },
   {
     title: "Task Manager",

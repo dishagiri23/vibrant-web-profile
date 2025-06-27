@@ -9,11 +9,11 @@ export function Hero() {
   };
 
   const handleDownloadResume = () => {
-    // Updated link to the new resume PDF
-    const resumeLink = "/Disha_Giri_Resume.pdf";
+    // Using the uploaded resume image
+    const resumeLink = "/lovable-uploads/7ccb5cea-6822-4e76-acc0-35b32f26e97d.png";
     const link = document.createElement('a');
     link.href = resumeLink;
-    link.setAttribute('download', 'Disha_Giri_Resume.pdf');
+    link.setAttribute('download', 'Disha_Giri_Resume.png');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
