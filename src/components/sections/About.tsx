@@ -1,4 +1,3 @@
-
 import { SectionHeading } from "@/components/SectionHeading";
 
 export function About() {
@@ -35,7 +34,7 @@ export function About() {
                   </li>
                   <li className="flex items-start">
                     <span className="font-semibold w-24">Email:</span>
-                    <span className="break-all">dishagiri09170@gmail.com</span>
+                    <span className="break-all">disha.career@outlook.com</span>
                   </li>
                   <li className="flex items-start">
                     <span className="font-semibold w-24">Location:</span>
