@@ -1,9 +1,12 @@
-
 import { SectionHeading } from "@/components/SectionHeading";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import blogProjectImg from "@/assets/blog-project.jpg";
+import weatherProjectImg from "@/assets/weather-project.jpg";
+import ecommerceProjectImg from "@/assets/ecommerce-project.jpg";
+import taskManagerProjectImg from "@/assets/task-manager-project.jpg";
 
 type Project = {
   title: string;
@@ -20,7 +23,7 @@ const projects: Project[] = [
     title: "Personal Blog",
     description: "A responsive blog website with a clean design",
     techStack: ["React", "Tailwind CSS", "Node.js"],
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    image: blogProjectImg,
     liveUrl: "#",
     githubUrl: "https://github.com/dishagiri23/tech-tales-by-disha",
   },
@@ -28,7 +31,7 @@ const projects: Project[] = [
     title: "Weather App",
     description: "Real-time weather data visualization application",
     techStack: ["JavaScript", "HTML", "CSS", "API Integration"],
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    image: weatherProjectImg,
     liveUrl: "#",
     githubUrl: "https://github.com/dishagiri23",
   },
@@ -36,7 +39,7 @@ const projects: Project[] = [
     title: "E-commerce Store",
     description: "Fully functional e-commerce platform with product listings",
     techStack: ["React", "Express", "MongoDB", "Node.js"],
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+    image: ecommerceProjectImg,
     liveUrl: "https://personalshopease.netlify.app/",
     githubUrl: "https://github.com/dishagiri23/Personal-Ecommerce-Website",
     hoverImage: "/lovable-uploads/46033ddd-1fbe-41be-96f7-c8e342c7b0f0.png",
@@ -45,7 +48,7 @@ const projects: Project[] = [
     title: "Task Manager",
     description: "Productivity app to manage daily tasks and schedules",
     techStack: ["React", "Firebase", "Material UI"],
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+    image: taskManagerProjectImg,
     liveUrl: "#",
     githubUrl: "https://github.com/dishagiri23",
   },
