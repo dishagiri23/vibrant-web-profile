@@ -42,7 +42,6 @@ const projects: Project[] = [
     image: ecommerceProjectImg,
     liveUrl: "https://personalshopease.netlify.app/",
     githubUrl: "https://github.com/dishagiri23/Personal-Ecommerce-Website",
-    hoverImage: "/lovable-uploads/46033ddd-1fbe-41be-96f7-c8e342c7b0f0.png",
   },
   {
     title: "Task Manager",
