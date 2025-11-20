@@ -9,7 +9,7 @@ export function Hero() {
   };
 
   const handleDownloadResume = () => {
-    toast.info("Starting resume download...");
+    const downloadToast = toast.info("Starting resume download...");
     
     const resumeLink = "/Disha_Giri_Resume.pdf";
     const link = document.createElement('a');
@@ -20,6 +20,7 @@ export function Hero() {
     document.body.removeChild(link);
     
     setTimeout(() => {
+      toast.dismiss(downloadToast);
       toast.success("Resume downloaded successfully!");
     }, 1000);
   };
