@@ -9,15 +9,19 @@ export function Hero() {
   };
 
   const handleDownloadResume = () => {
-    // Using the uploaded resume image
-    const resumeLink = "/lovable-uploads/7ccb5cea-6822-4e76-acc0-35b32f26e97d.png";
+    toast.info("Starting resume download...");
+    
+    const resumeLink = "/Disha_Giri_Resume.pdf";
     const link = document.createElement('a');
     link.href = resumeLink;
-    link.setAttribute('download', 'Disha_Giri_Resume.png');
+    link.setAttribute('download', 'Disha_Giri_Resume.pdf');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    toast.success("Resume download started");
+    
+    setTimeout(() => {
+      toast.success("Resume downloaded successfully!");
+    }, 1000);
   };
 
   return (
