@@ -37,8 +37,7 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <a href="#home" className="flex items-center">
-              <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center text-white font-bold">DG</div>
-              <span className="ml-2 text-lg font-semibold">Portfolio</span>
+              <span className="text-lg font-semibold">Portfolio</span>
             </a>
           </div>
 
