@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { SearchDialog } from "@/components/SearchDialog";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Code2 } from "lucide-react";
+import { Menu, X, Sparkles } from "lucide-react";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +38,7 @@ export function Navbar() {
           <div className="flex items-center">
             <a href="#home" className="flex items-center gap-2 group">
               <div className="bg-primary/10 p-1.5 rounded-md group-hover:bg-primary/20 transition-colors">
-                <Code2 className="h-5 w-5 text-primary" />
+                <Sparkles className="h-5 w-5 text-primary animate-pulse" />
               </div>
               <span className="text-lg font-semibold">Portfolio</span>
             </a>
