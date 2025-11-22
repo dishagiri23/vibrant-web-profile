@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, Mail, Download, Sparkles } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, Download } from "lucide-react";
 import { toast } from "sonner";
 import { useState, useEffect } from "react";
 
@@ -69,12 +69,8 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 flex items-center gap-3 flex-wrap">
-              Hi, I'm 
-              <span className="flex items-center gap-2">
-                <Sparkles className="h-8 w-8 md:h-10 md:w-10 text-primary animate-pulse" />
-                <span className="text-primary">Disha Giri</span>
-              </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+              Hi, I'm <span className="text-primary">Disha Giri</span>
             </h1>
             <div className="mb-6 h-16 md:h-20">
               <p className="text-xl md:text-2xl font-medium bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent min-h-[2em]">
