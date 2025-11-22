@@ -66,14 +66,14 @@ export function Hero() {
 
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center pt-16 section-padding">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="order-2 md:order-1 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="order-2 lg:order-1 animate-fade-in">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
               Hi, I'm <span className="text-primary">Disha Giri</span>
             </h1>
             <div className="mb-6 h-16 md:h-20">
-              <p className="text-xl md:text-2xl font-medium bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent min-h-[2em]">
+              <p className="text-lg sm:text-xl md:text-2xl font-medium bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent min-h-[2em]">
                 {displayedText}
                 <span className="animate-pulse">|</span>
               </p>
@@ -101,8 +101,8 @@ export function Hero() {
               </a>
             </div>
           </div>
-          <div className="order-1 md:order-2 flex justify-center animate-fade-in">
-            <div className="relative w-64 h-64 md:w-80 md:h-80">
+          <div className="order-1 lg:order-2 flex justify-center animate-fade-in">
+            <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80">
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#a78bfa] to-[#c4b5fd] opacity-30 blur-3xl"></div>
               <div className="relative bg-card border-2 border-primary/20 rounded-full w-full h-full flex items-center justify-center overflow-hidden">
                 <div className="w-full h-full flex items-center justify-center">

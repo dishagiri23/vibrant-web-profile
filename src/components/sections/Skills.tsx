@@ -43,13 +43,13 @@ const toolsSkills: Skill[] = [
 export function Skills() {
   return (
     <section id="skills" className="py-20 section-padding">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         <SectionHeading 
           title="Skills" 
           subtitle="Technologies I work with"
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
           <Card className="card-hover">
             <CardHeader className="flex flex-row items-center gap-4">
               <div className="bg-primary/10 p-2 rounded-md">
