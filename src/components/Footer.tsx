@@ -38,7 +38,7 @@ export function Footer() {
             </a>
           </div>
           <p className="text-muted-foreground text-center">
-            © {year} Disha Giri. All rights reserved.
+            Designed with ❤️ By Disha Giri
           </p>
         </div>
       </div>

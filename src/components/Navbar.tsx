@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { SearchDialog } from "@/components/SearchDialog";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Code2 } from "lucide-react";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +36,10 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <a href="#home" className="flex items-center">
+            <a href="#home" className="flex items-center gap-2 group">
+              <div className="bg-primary/10 p-1.5 rounded-md group-hover:bg-primary/20 transition-colors">
+                <Code2 className="h-5 w-5 text-primary" />
+              </div>
               <span className="text-lg font-semibold">Portfolio</span>
             </a>
           </div>
@@ -44,7 +47,7 @@ export function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex md:items-center md:space-x-4">
             <div className="flex items-center space-x-4">
-              {["home", "about", "projects", "skills", "contact"].map((item) => (
+              {["home", "about", "education", "experience", "projects", "skills", "contact"].map((item) => (
                 <Button
                   key={item}
                   variant="ghost"
@@ -77,7 +80,7 @@ export function Navbar() {
         {isOpen && (
           <div className="md:hidden py-4 animate-fade-in">
             <div className="flex flex-col space-y-2">
-              {["home", "about", "projects", "skills", "contact"].map((item) => (
+              {["home", "about", "education", "experience", "projects", "skills", "contact"].map((item) => (
                 <Button
                   key={item}
                   variant="ghost"
