@@ -33,9 +33,11 @@ export function Hero() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
               Hi, I'm <span className="text-primary">Disha Giri</span>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-6">
-              A passionate Web Developer building modern web applications
-            </p>
+            <div className="mb-6">
+              <p className="text-xl md:text-2xl font-medium bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent animate-pulse">
+                Frontend Developer | Backend Developer | Web Designing | MERN Stack Developer | Full Stack Developer
+              </p>
+            </div>
             <div className="flex flex-wrap gap-4 mb-8">
               <Button onClick={handleHireMe} size="lg">
                 Hire Me
