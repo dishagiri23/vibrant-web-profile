@@ -1,8 +1,47 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Twitter, Mail, Download } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, Download, Sparkles } from "lucide-react";
 import { toast } from "sonner";
+import { useState, useEffect } from "react";
 
 export function Hero() {
+  const roles = [
+    "Frontend Developer",
+    "Backend Developer",
+    "Web Designing",
+    "MERN Stack Developer",
+    "Full Stack Developer"
+  ];
+  
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentRole = roles[currentRoleIndex];
+    const typingSpeed = isDeleting ? 50 : 100;
+
+    if (!isDeleting && displayedText === currentRole) {
+      setTimeout(() => setIsDeleting(true), 2000);
+      return;
+    }
+
+    if (isDeleting && displayedText === "") {
+      setIsDeleting(false);
+      setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
+      return;
+    }
+
+    const timeout = setTimeout(() => {
+      setDisplayedText(
+        isDeleting
+          ? currentRole.substring(0, displayedText.length - 1)
+          : currentRole.substring(0, displayedText.length + 1)
+      );
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [displayedText, isDeleting, currentRoleIndex]);
+
   const handleHireMe = () => {
     window.location.href = "mailto:disha.career@outlook.com?subject=Job Opportunity";
     toast.success("Opening email client");
@@ -30,12 +69,17 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              Hi, I'm <span className="text-primary">Disha Giri</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 flex items-center gap-3 flex-wrap">
+              Hi, I'm 
+              <span className="flex items-center gap-2">
+                <Sparkles className="h-8 w-8 md:h-10 md:w-10 text-primary animate-pulse" />
+                <span className="text-primary">Disha Giri</span>
+              </span>
             </h1>
-            <div className="mb-6">
-              <p className="text-xl md:text-2xl font-medium bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent animate-pulse">
-                Frontend Developer | Backend Developer | Web Designing | MERN Stack Developer | Full Stack Developer
+            <div className="mb-6 h-16 md:h-20">
+              <p className="text-xl md:text-2xl font-medium bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent min-h-[2em]">
+                {displayedText}
+                <span className="animate-pulse">|</span>
               </p>
             </div>
             <div className="flex flex-wrap gap-4 mb-8">
