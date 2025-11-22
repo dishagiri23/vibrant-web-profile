@@ -15,8 +15,7 @@ const experienceData: ExperienceItem[] = [
     title: "Frontend Developer",
     company: "ApexPlanet Software Pvt Ltd",
     type: "Internship",
-    period: "2024",
-    description: "Worked on developing modern web applications using React and other frontend technologies.",
+    period: "October 2025 - November 2025",
   },
 ];
 
