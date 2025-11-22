@@ -54,15 +54,15 @@ const projects: Project[] = [
 export function Projects() {
   return (
     <section id="projects" className="py-20 bg-muted/50 section-padding">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         <SectionHeading 
           title="Projects" 
           subtitle="Check out some of my recent work"
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden card-hover max-w-sm mx-auto">
+            <Card key={index} className="overflow-hidden card-hover animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="aspect-video overflow-hidden bg-muted">
                 <img 
                   src={project.image} 
