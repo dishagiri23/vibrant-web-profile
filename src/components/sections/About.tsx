@@ -9,7 +9,7 @@ export function About() {
           subtitle="Get to know me better"
         />
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
             <p className="text-lg leading-relaxed">
               I'm a BCA student passionate about web development, focused on creating responsive and user-friendly websites that solve real problems.

@@ -37,15 +37,12 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <a href="#home" className="flex items-center gap-2 group">
-              <div className="bg-primary/10 p-1.5 rounded-md group-hover:bg-primary/20 transition-colors">
-                <Sparkles className="h-5 w-5 text-primary animate-pulse" />
-              </div>
               <span className="text-lg font-semibold">Portfolio</span>
             </a>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex md:items-center md:space-x-4">
+          <div className="hidden lg:flex lg:items-center lg:space-x-4">
             <div className="flex items-center space-x-4">
               {["home", "about", "education", "experience", "projects", "skills", "contact"].map((item) => (
                 <Button
@@ -68,7 +65,7 @@ export function Navbar() {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden"
+              className="lg:hidden"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -78,7 +75,7 @@ export function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden py-4 animate-fade-in">
+          <div className="lg:hidden py-4 animate-fade-in">
             <div className="flex flex-col space-y-2">
               {["home", "about", "education", "experience", "projects", "skills", "contact"].map((item) => (
                 <Button
