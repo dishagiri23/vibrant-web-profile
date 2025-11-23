@@ -33,7 +33,7 @@ export function Education() {
           subtitle="My academic journey"
         />
         
-        <div className="max-w-3xl mx-auto md:mr-auto md:ml-0">
+        <div className="max-w-3xl mx-auto">
           <div className="relative">
             {/* Timeline line */}
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-primary/20"></div>
@@ -50,17 +50,17 @@ export function Education() {
                   
                   <Card className="card-hover">
                     <CardHeader>
-                      <div className="flex flex-col sm:flex-row items-start justify-between gap-3">
-                        <div className="flex items-start gap-3 w-full">
-                          <div className="bg-primary/10 p-2 rounded-md flex-shrink-0">
+                      <div className="flex items-start justify-between flex-wrap gap-2">
+                        <div className="flex items-center gap-3">
+                          <div className="bg-primary/10 p-2 rounded-md">
                             <GraduationCap className="h-5 w-5 text-primary" />
                           </div>
-                          <div className="flex-1 min-w-0">
-                            <CardTitle className="text-lg break-words">{item.degree}</CardTitle>
-                            <p className="text-sm text-muted-foreground mt-1 break-words">{item.institution}</p>
+                          <div>
+                            <CardTitle className="text-lg">{item.degree}</CardTitle>
+                            <p className="text-sm text-muted-foreground mt-1">{item.institution}</p>
                           </div>
                         </div>
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground flex-shrink-0 w-full sm:w-auto">
+                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
                           <Calendar className="h-4 w-4" />
                           <span>{item.period}</span>
                         </div>

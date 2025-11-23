@@ -37,6 +37,9 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <a href="#home" className="flex items-center gap-2 group">
+              <div className="bg-primary/10 p-1.5 rounded-md group-hover:bg-primary/20 transition-colors">
+                <Sparkles className="h-5 w-5 text-primary animate-pulse" />
+              </div>
               <span className="text-lg font-semibold">Portfolio</span>
             </a>
           </div>
