@@ -23,7 +23,6 @@ export function SearchDialog({ onNavigate }: SearchDialogProps) {
     { name: "Home", id: "home" },
     { name: "About", id: "about" },
     { name: "Education", id: "education" },
-    { name: "Experience", id: "experience" },
     { name: "Projects", id: "projects" },
     { name: "Skills", id: "skills" },
     { name: "Contact", id: "contact" },
