@@ -15,10 +15,7 @@ export function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 scroll-animate">
             <p className="text-lg leading-relaxed">
-              I'm a BCA student passionate about web development, creating responsive and user-friendly websites with modern technologies like HTML, CSS, JavaScript, and React.
-            </p>
-            <p className="text-lg leading-relaxed">
-              I adapt quickly to new technologies and focus on design details that enhance user experience while building technically sound, accessible projects.
+              I'm a skilled developer with expertise in Frontend, Backend, Fullstack, and MERN stack technologies. I also have a strong interest in AI, focusing on building scalable web applications and innovative solutions.
             </p>
           </div>
           

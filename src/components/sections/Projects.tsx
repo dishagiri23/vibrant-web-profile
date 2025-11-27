@@ -89,13 +89,13 @@ export function Projects() {
               <CardFooter className="flex justify-between p-4">
                 <Button variant="outline" size="sm" asChild>
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                    <Github size={16} className="mr-2 text-white" />
+                    <Github size={16} className="mr-2" />
                     Repo
                   </a>
                 </Button>
                 <Button size="sm" asChild>
                   <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                    <ExternalLink size={16} className="mr-2 text-white" />
+                    <ExternalLink size={16} className="mr-2" />
                     Live Demo
                   </a>
                 </Button>
