@@ -48,13 +48,13 @@ export function Contact() {
             <div className="space-y-4">
               <h4 className="text-lg font-medium">Contact Information</h4>
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-white" />
+                <Mail className="h-5 w-5 text-primary" />
                 <a href="mailto:disha.career@outlook.com" className="hover:text-primary transition-colors">
                   disha.career@outlook.com
                 </a>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
-                <svg className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
