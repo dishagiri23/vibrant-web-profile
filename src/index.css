@@ -112,3 +112,15 @@
 .container {
   @apply px-4 sm:px-6 md:px-8 lg:px-12;
 }
+
+/* Scroll animation */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

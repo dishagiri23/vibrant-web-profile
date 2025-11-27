@@ -1,8 +1,11 @@
 import { SectionHeading } from "@/components/SectionHeading";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export function About() {
+  const ref = useScrollAnimation();
+  
   return (
-    <section id="about" className="py-20 section-padding">
+    <section id="about" className="py-20 section-padding" ref={ref}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
           title="About Me" 
@@ -10,19 +13,16 @@ export function About() {
         />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 animate-fade-in">
+          <div className="space-y-6 scroll-animate">
             <p className="text-lg leading-relaxed">
-              I'm a BCA student passionate about web development, focused on creating responsive and user-friendly websites that solve real problems.
+              I'm a BCA student passionate about web development, creating responsive and user-friendly websites with modern technologies like HTML, CSS, JavaScript, and React.
             </p>
             <p className="text-lg leading-relaxed">
-              My technical journey includes building applications with modern technologies like HTML, CSS, JavaScript, and React, constantly exploring new tools to enhance my development skills.
-            </p>
-            <p className="text-lg leading-relaxed">
-              I excel at quickly adapting to new technologies and have a keen eye for design details that improve user experience. My goal is to create projects that are both technically sound and genuinely accessible to users.
+              I adapt quickly to new technologies and focus on design details that enhance user experience while building technically sound, accessible projects.
             </p>
           </div>
           
-          <div className="relative flex justify-center animate-fade-in">
+          <div className="relative flex justify-center scroll-animate">
             <div className="relative max-w-md">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-purple-400 rounded-lg blur opacity-25"></div>
               <div className="relative bg-card p-6 rounded-lg border border-border">

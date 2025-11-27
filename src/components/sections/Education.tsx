@@ -53,7 +53,7 @@ export function Education() {
                       <div className="flex items-start justify-between flex-wrap gap-2">
                         <div className="flex items-center gap-3">
                           <div className="bg-primary/10 p-2 rounded-md">
-                            <GraduationCap className="h-5 w-5 text-primary" />
+                            <GraduationCap className="h-5 w-5 text-white" />
                           </div>
                           <div>
                             <CardTitle className="text-lg">{item.degree}</CardTitle>
@@ -61,7 +61,7 @@ export function Education() {
                           </div>
                         </div>
                         <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <Calendar className="h-4 w-4" />
+                          <Calendar className="h-4 w-4 text-white" />
                           <span>{item.period}</span>
                         </div>
                       </div>

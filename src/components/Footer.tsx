@@ -13,7 +13,7 @@ export function Footer() {
               href="https://github.com/dishagiri23" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-white hover:text-primary transition-colors"
               aria-label="GitHub"
             >
               <Github className="h-5 w-5" />
@@ -22,7 +22,7 @@ export function Footer() {
               href="https://twitter.com/Dev_DishaGiri" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-white hover:text-primary transition-colors"
               aria-label="Twitter"
             >
               <Twitter className="h-5 w-5" />
@@ -31,7 +31,7 @@ export function Footer() {
               href="https://www.linkedin.com/in/disha-giri-414a72314/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-white hover:text-primary transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin className="h-5 w-5" />
@@ -40,7 +40,7 @@ export function Footer() {
               href="https://discord.com/users/1332623921307975762" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="text-white hover:text-primary transition-colors"
               aria-label="Discord"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
