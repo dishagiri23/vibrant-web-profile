@@ -88,14 +88,14 @@ export function Projects() {
               </CardContent>
               <CardFooter className="flex justify-between p-4">
                 <Button variant="outline" size="sm" asChild>
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Github size={16} className="mr-2" />
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                    <Github size={16} className="mr-2 text-white" />
                     Repo
                   </a>
                 </Button>
                 <Button size="sm" asChild>
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink size={16} className="mr-2" />
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                    <ExternalLink size={16} className="mr-2 text-white" />
                     Live Demo
                   </a>
                 </Button>

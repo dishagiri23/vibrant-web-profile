@@ -51,7 +51,7 @@ export function Skills() {
           <Card className="card-hover">
             <CardHeader className="flex flex-row items-center gap-4">
               <div className="bg-primary/10 p-2 rounded-md">
-                <Code className="h-6 w-6 text-primary" />
+                <Code className="h-6 w-6 text-white" />
               </div>
               <CardTitle>Frontend</CardTitle>
             </CardHeader>
@@ -75,7 +75,7 @@ export function Skills() {
           <Card className="card-hover">
             <CardHeader className="flex flex-row items-center gap-4">
               <div className="bg-primary/10 p-2 rounded-md">
-                <Server className="h-6 w-6 text-primary" />
+                <Server className="h-6 w-6 text-white" />
               </div>
               <CardTitle>Backend</CardTitle>
             </CardHeader>
@@ -99,7 +99,7 @@ export function Skills() {
           <Card className="card-hover">
             <CardHeader className="flex flex-row items-center gap-4">
               <div className="bg-primary/10 p-2 rounded-md">
-                <Database className="h-6 w-6 text-primary" />
+                <Database className="h-6 w-6 text-white" />
               </div>
               <CardTitle>Database</CardTitle>
             </CardHeader>
@@ -123,7 +123,7 @@ export function Skills() {
           <Card className="card-hover">
             <CardHeader className="flex flex-row items-center gap-4">
               <div className="bg-primary/10 p-2 rounded-md">
-                <Wrench className="h-6 w-6 text-primary" />
+                <Wrench className="h-6 w-6 text-white" />
               </div>
               <CardTitle>Tools</CardTitle>
             </CardHeader>
