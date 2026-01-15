@@ -5,7 +5,7 @@ import { ExternalLink, Github } from "lucide-react";
 import blogProjectImg from "@/assets/blog-project.jpg";
 import weatherProjectImg from "@/assets/weather-project.jpg";
 import ecommerceProjectImg from "@/assets/ecommerce-project.jpg";
-import taskManagerProjectImg from "@/assets/task-manager-project.jpg";
+import todoProjectImg from "@/assets/todo-project.png";
 
 type Project = {
   title: string;
@@ -42,12 +42,12 @@ const projects: Project[] = [
     githubUrl: "https://github.com/dishagiri23/Personal-Ecommerce-Website",
   },
   {
-    title: "Task Manager",
-    description: "Productivity app to manage daily tasks and schedules",
-    techStack: ["React", "Firebase", "Material UI"],
-    image: taskManagerProjectImg,
-    liveUrl: "#",
-    githubUrl: "https://github.com/dishagiri23",
+    title: "To-do",
+    description: "A simple and intuitive task management app to organize daily tasks",
+    techStack: ["React", "JavaScript", "CSS"],
+    image: todoProjectImg,
+    liveUrl: "To-do",
+    githubUrl: "https://github.com/dishagiri23/Projects/tree/main/todo",
   },
 ];
 
