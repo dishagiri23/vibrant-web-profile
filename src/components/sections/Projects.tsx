@@ -46,7 +46,7 @@ const projects: Project[] = [
     description: "A simple and intuitive task management app to organize daily tasks",
     techStack: ["React", "JavaScript", "CSS"],
     image: todoProjectImg,
-    liveUrl: "To-do",
+    liveUrl: "https://listcraft.netlify.app",
     githubUrl: "https://github.com/dishagiri23/Projects/tree/main/todo",
   },
 ];
