@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import blogProjectImg from "@/assets/blog-project.jpg";
-import weatherProjectImg from "@/assets/weather-project.jpg";
+import weatherProjectImg from "@/assets/weather-project.png";
 import ecommerceProjectImg from "@/assets/ecommerce-project.jpg";
 import todoProjectImg from "@/assets/todo-project.png";
 
