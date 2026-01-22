@@ -30,8 +30,8 @@ const projects: Project[] = [
     description: "Real-time weather data visualization application",
     techStack: ["JavaScript", "HTML", "CSS", "API Integration"],
     image: weatherProjectImg,
-    liveUrl: "#",
-    githubUrl: "https://github.com/dishagiri23",
+    liveUrl: "https://cloudfetch.netlify.app/",
+    githubUrl: "https://github.com/dishagiri23/Projects/tree/main/wheather",
   },
   {
     title: "E-commerce Store",
