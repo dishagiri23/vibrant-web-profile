@@ -54,7 +54,7 @@ const projects: Project[] = [
 export function Projects() {
   return (
     <section id="projects" className="py-20 bg-muted/50 section-padding">
-      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12">
         <SectionHeading 
           title="Projects" 
           subtitle="Check out some of my recent work"
