@@ -28,7 +28,7 @@ const projects: Project[] = [
   {
     title: "Weather App",
     description: "Real-time weather data visualization application",
-    techStack: ["JavaScript", "HTML", "CSS", "API Integration"],
+    techStack: ["JavaScript", "HTML", "SCSS", "API Integration"],
     image: weatherProjectImg,
     liveUrl: "https://cloudfetch.netlify.app/",
     githubUrl: "https://github.com/dishagiri23/Projects/tree/main/wheather",

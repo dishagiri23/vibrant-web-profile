@@ -25,24 +25,24 @@ export function About() {
               <div className="relative bg-card p-6 rounded-lg border border-border">
                 <h3 className="text-xl font-semibold mb-4">Personal Details</h3>
                 <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="font-semibold w-24">Name:</span>
+                  <li className="flex flex-col sm:flex-row sm:items-start">
+                    <span className="font-semibold sm:w-24 mb-1 sm:mb-0">Name:</span>
                     <span>Disha Giri</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="font-semibold w-24">Email:</span>
+                  <li className="flex flex-col sm:flex-row sm:items-start">
+                    <span className="font-semibold sm:w-24 mb-1 sm:mb-0">Email:</span>
                     <span className="break-all">disha.career@outlook.com</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="font-semibold w-24">Location:</span>
+                  <li className="flex flex-col sm:flex-row sm:items-start">
+                    <span className="font-semibold sm:w-24 mb-1 sm:mb-0">Location:</span>
                     <span>India</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="font-semibold w-24">Study:</span>
+                  <li className="flex flex-col sm:flex-row sm:items-start">
+                    <span className="font-semibold sm:w-24 mb-1 sm:mb-0">Study:</span>
                     <span>BCA (Bachelor of Computer Applications)</span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="font-semibold w-24">Interests:</span>
+                  <li className="flex flex-col sm:flex-row sm:items-start">
+                    <span className="font-semibold sm:w-24 mb-1 sm:mb-0">Interests:</span>
                     <div className="flex flex-wrap gap-2">
                       <span className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">Web Development</span>
                       <span className="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">Problem Solving</span>
