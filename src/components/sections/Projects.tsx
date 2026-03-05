@@ -34,12 +34,12 @@ const projects: Project[] = [
     githubUrl: "https://github.com/dishagiri23/Projects/tree/main/wheather",
   },
   {
-    title: "E-commerce Store",
-    description: "Fully functional e-commerce platform with product listings",
-    techStack: ["React", "Express", "MongoDB", "Node.js"],
+    title: "Color Palette Generator",
+    description: "A dynamic color palette generator to explore and curate beautiful color combinations",
+    techStack: ["HTML", "CSS", "JS"],
     image: ecommerceProjectImg,
-    liveUrl: "https://personalshopease.netlify.app/",
-    githubUrl: "https://github.com/dishagiri23/Personal-Ecommerce-Website",
+    liveUrl: "https://color-curate.netlify.app",
+    githubUrl: "https://github.com/dishagiri23/Projects/tree/main/color-palette",
   },
   {
     title: "To-do",
