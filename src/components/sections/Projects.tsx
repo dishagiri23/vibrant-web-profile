@@ -18,12 +18,12 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Personal Blog",
-    description: "A responsive blog website with a clean design",
-    techStack: ["React", "Tailwind CSS", "Node.js"],
+    title: "Productivity Dashboard",
+    description: "A feature-rich productivity dashboard with daily planner, weather updates, and focus tools",
+    techStack: ["HTML", "CSS", "JS", "API Integration"],
     image: blogProjectImg,
-    liveUrl: "#",
-    githubUrl: "https://github.com/dishagiri23/tech-tales-by-disha",
+    liveUrl: "https://focuspanel.netlify.app",
+    githubUrl: "https://github.com/dishagiri23/Projects/tree/main/productivity-dashboard",
   },
   {
     title: "Weather App",
@@ -36,7 +36,7 @@ const projects: Project[] = [
   {
     title: "Color Palette Generator",
     description: "A dynamic color palette generator to explore and curate beautiful color combinations",
-    techStack: ["HTML", "CSS", "JS"],
+    techStack: ["HTML", "SCSS", "JS"],
     image: ecommerceProjectImg,
     liveUrl: "https://color-curate.netlify.app",
     githubUrl: "https://github.com/dishagiri23/Projects/tree/main/color-palette",
