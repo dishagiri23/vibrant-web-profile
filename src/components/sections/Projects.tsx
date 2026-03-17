@@ -68,7 +68,7 @@ export function Projects() {
                   src={project.image} 
                   alt={project.title} 
                   className={`w-full h-full transition-transform hover:scale-105 duration-300 ${
-                    index === 0 ? 'object-contain bg-card' : 'object-cover'
+                    index === 0 || index === 2 ? 'object-contain bg-card' : 'object-cover'
                   }`}
                 />
               </div>
