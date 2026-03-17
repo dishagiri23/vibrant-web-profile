@@ -36,7 +36,7 @@ const projects: Project[] = [
   {
     title: "Color Palette Generator",
     description: "A dynamic color palette generator to explore and curate beautiful color combinations",
-    techStack: ["HTML", "CSS", "JS"],
+    techStack: ["HTML", "SCSS", "JS"],
     image: ecommerceProjectImg,
     liveUrl: "https://color-curate.netlify.app",
     githubUrl: "https://github.com/dishagiri23/Projects/tree/main/color-palette",
